@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: AppsTechnologies
+    runtime: static
+    buildCommand: yarn build
+    staticPublishPath: ./build
+    previews:
+      generation: automatic # Enable service previews
+    buildFilter:
+      paths:
+        - src/**/*.js
+      ignoredPaths:
+        - src/**/*.test.js
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: sameorigin
+    routes:
+      - type: redirect
+        source: /old
+        destination: /new
+      - type: rewrite
+        source: /a/*
+        destination: /a
+    ipAllowList: # Optional (defaults to allow all); Enterprise workspaces only
+      - source: 203.0.113.4/30
+        description: office
+      - source: 198.51.100.1
+        description: home
+        destination: /a
