@@ -1,0 +1,1056 @@
+.contact-area {
+	margin-top: -538px;
+}
+.contact-bg {
+	box-shadow: 0px 16px 32px 0px rgba(228, 228, 228, 0.56);
+	background: #ffffff;
+	padding: 60px 60px 30px 60px;
+}
+.contact-map {
+	min-height: 390px;
+}
+#appointment-form input {
+	background: none;
+	height: 60px;
+	width: 100%;
+	padding: 0 30px;
+	padding-right: 30px;
+	border: 0;
+	color: #9d9d9d;
+	font-weight: 400;
+	border: 1px solid #ebebeb;
+	font-size: 15px;
+	text-transform: capitalize;
+	border-radius: 5px;
+}
+#appointment-form textarea {
+	color: #9d9d9d;
+	font-weight: 400;
+	height: 120px;
+	width: 100%;
+	padding: 30px 30px;
+	border: 1px solid #ebebeb;
+	text-transform: capitalize;
+	background: none;
+	border-radius: 5px;
+}
+#appointment-form input::-moz-placeholder, .appointment-form input::placeholder {
+  color: #9d9d9d;
+  font-size: 15px;
+}
+#appointment-form textarea::-moz-placeholder, .appointment-form textarea::placeholder {
+  color: #9d9d9d;
+  font-size: 15px;
+}
+.form-box{position: relative;}
+.form-box::after {
+	position: absolute;
+	content: "\f007";
+	font-family: "Font Awesome 6 Pro";
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	right: 20px;
+	color: $theme-color;
+	top: 19px;
+}
+.email-icon:after{
+	content: "\f0e0";
+}
+
+.date-icon::after {
+	content: "\f107";
+}
+.person-icon:after{content: "\f6c0";}
+.time-icon:after{content: "\f017";}
+.message-icon:after{content: "\f040";}
+#contact-form textarea {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: currentcolor currentcolor #328ef4;
+	border-image: none;
+	border-style: none none solid;
+	border-width: 0 0 1px;
+	color: $white;
+	font-size: 14px;
+	height: 98px;
+	text-transform: capitalize;
+	width: 100%;
+	background:none;
+	transition:.3s;
+}
+.contact-wrapper {
+	margin-right: 70px;
+}
+#contact-form input {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #328ef4;
+	border-image: none;
+	border-style: none none solid;
+	border-width: 0 0 1px;
+	color: #ffffff;
+	font-size: 15px;
+	height: 57px;
+	text-transform: capitalize;
+	width: 100%;
+	background: none;
+	transition: .3s;
+	font-family: "cerebri_sansmedium";
+} 
+#contact-form input::-moz-placeholder, .contact-form input::placeholder {
+	color: $white;
+	font-size: 15px;
+	font-family: $c_med;
+  }
+  #contact-form input:focus {
+	border-color: $white;
+	border-bottom: 2px solid #fff;
+}
+  #contact-form textarea::-moz-placeholder, .contact-form textarea::placeholder {
+	color: $white;
+	font-size: 15px;
+	font-family: $c_med;
+  }
+  #contact-form textarea:focus {
+	border-color: $white;
+	border-bottom: 2px solid #fff;
+}
+#contact-form button.btn {
+	-moz-user-select: none;
+	background: #fff;
+	border: medium none;
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 0;
+	padding: 20px 40px;
+	text-align: center;
+	text-transform: uppercase;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	border-radius: 5px;
+	position: relative;
+	font-family: 'cerebri_sanssemibold';
+	margin-top:5px;
+}
+.btn-texts {
+	color:$black;
+	position: relative;
+	transition: .3s;
+}
+#contact-form button.btn:hover .btn-text{color:$white;}
+.btn-texts i {
+	padding-left: 5px;
+}                   
+#contact-form button.btn::before {
+	display: none;
+}
+.form-2-box{position: relative;}
+.form-2-box::after {
+	position: absolute;
+	content: "\f007";
+	font-family: "Font Awesome 6 Pro";
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	right: 0;
+	color: #ffffff;
+	top: 20px;
+}
+.email-2-icon:after{
+	content: "\f2b6";
+}
+.sub-icon:after{content: "\f107";}
+.message-2-icon::after {
+	content: "\f040";
+	top: 9px;
+}
+
+// contact-3-style
+.contact-us-area {
+	margin-bottom: -567px;
+	position: relative;
+	z-index: 99;
+	@media #{$xs}{
+		margin-bottom: 60px;
+	}
+}
+.contact-2-map {
+	min-height: 700px;
+}
+.single-contact-us {
+	background-size: cover;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-position: center center;
+	right: 0;
+}
+.contact-us-info {
+	background: $white;
+	padding: 37px 100px 37px 54px;
+}
+.contact-us-icon {
+	float: left;
+	margin-right: 20px;
+}
+.contact-us-text {
+	overflow: hidden;
+	& span{
+		color:#ababab;
+		font-size: 16px;
+		font-family: $c_bold;
+	}
+	& h4{
+		font-size: 22px;
+		margin-bottom: 0;
+		margin-top:4px;
+		a{
+			&:hover{
+				color: $theme-color;
+			}
+		}
+	}
+}
+.country-select.select-subject{
+	.nice-select{
+		color: #9d9d9d;
+		border-radius: 5px;
+		&:focus{
+			border-color: #ebebeb;
+		}
+		&::after{
+			border-bottom: 1px solid $theme-color;
+			border-right: 1px solid $theme-color;
+			height: 7px;
+			width: 7px;
+		}
+	}
+}
+.country-select.select-contact{
+	.nice-select{
+		color: $white;
+		border-color: #328ef4;
+		border-radius: 0px;
+		border-style: none none solid;
+        border-width: 0 0 1px;
+		background: transparent;
+		padding: 0px;
+		font-size: 16px;
+		font-weight: 600;
+		.option{
+			color: $black;
+		}
+		&:focus{
+			border: 0;
+			border-bottom: 2px solid $white;
+		}
+		&::after{
+			border-bottom: 1px solid $white;
+			border-right: 1px solid $white;
+			height: 7px;
+			width: 7px;
+		}
+	}
+}
+.contact-us-bg{background: $theme-color;}
+.contact-us-wrapper {
+	padding: 55px 70px 70px 40px;
+}
+.contact-us-content h2 {
+	color: $white;
+	font-size: 45px;
+	margin-bottom: 40px;
+	@media #{$md}{
+		font-size: 35px;
+	}
+	@media #{$sm}{
+		font-size: 30px;
+	}
+	@media #{$xs}{
+		font-size: 28px;
+	}
+	br{
+		@media #{$xs}{
+			display: none;
+		}
+	}
+}
+#contact-us-form input {
+	background: none;
+	height: 60px;
+	width: 100%;
+	padding-left: 20px;
+	border: 0;
+	color: $white;
+	font-family: "cerebri_sansregular";
+	border: 1px solid #328ef4;
+	font-size: 15px;
+	text-transform: capitalize;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+#contact-us-form textarea {
+	color: $white;
+	height: 120px;
+	width: 100%;
+	padding: 30px 30px;
+	border: 1px solid #328ef4;
+	text-transform: capitalize;
+	background: none;
+	border-radius: 5px;
+	font-family: $c_reg;
+	margin-bottom: 24px;
+}
+#contact-us-form input::-moz-placeholder, .contact-us-form input::placeholder {
+  color: $white;;
+  font-size: 15px;
+}
+#contact-us-form textarea::-moz-placeholder, #contact-us-form textarea::placeholder {
+  color: $white;
+  font-size: 15px;
+}
+#contact-us-form button.btn {
+	-moz-user-select: none;
+	background: #fff;
+	border: medium none;
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 0;
+	padding: 20px 40px;
+	text-align: center;
+	text-transform: uppercase;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	border-radius: 5px;
+	position: relative;
+	font-family: 'cerebri_sanssemibold';
+	margin-top:5px;
+}
+.btn-texts {
+	color:$black;
+	position: relative;
+	transition: .3s;
+}
+.btn-texts i {
+	padding-left: 5px;
+}                   
+#contact-us-form button.btn::before {
+	display: none;
+}
+// appointment-2
+.contact-2-area {
+	background-size: cover;
+	background-position: center center;
+}
+ .appointment-form input {
+	height: 70px;
+	width: 100%; 
+	padding: 0 30px;
+	padding-right: 30px;
+	border: 0;
+	color: #a9bbc8;
+	font-family: $c_reg;
+	border: 2px solid #566875;
+	font-size: 15px;
+	text-transform: capitalize;
+	border-radius: 5px;
+	background: rgba(59,69,82,.6);
+	transition: .3s;
+}
+.country-select.home4-contact{
+	.nice-select{
+		height: 70px;
+	    width: 100%; 
+		border: 2px solid #566875;
+		font-size: 15px;
+		text-transform: capitalize;
+		border-radius: 5px;
+		background: rgba(59,69,82,.6);
+		color: #a9bbc8;
+		&:after{
+			border-bottom: 1px solid $white;
+			border-right: 1px solid $white;
+			height: 7px;
+			width: 7px;
+		}
+		&:focus{
+			border-color: $theme-color;
+		}
+		.option{
+			color: $black;
+		}
+	}
+}
+.country-select.option-select{
+	.nice-select{
+		border: 2px solid transparent;
+		text-transform: capitalize;
+		background: #f4f4f4;
+		font-size: 15px;
+		color: #696969;
+		width: 100%;
+		height: 70px;
+		border-radius: 5px;
+		padding:0px 30px;
+		&:focus{
+			border: 2px solid $theme-color;
+		}
+		&:after{
+			border-bottom: 1px solid $theme-color;
+			border-right: 1px solid $theme-color;
+			height: 7px;
+			width: 7px;
+			right: 20px;
+		}
+	}
+}
+.appointment-form input:focus {
+	border-color: $white;
+	border-bottom: 2px solid #fff;
+	background: none;
+}
+.appointment-form textarea {
+	color: #a9bbc8;
+	font-family: $c_reg;
+	height: 120px;
+	width: 100%;
+	padding: 17px 30px;
+	border: 2px solid #566875;
+	text-transform: capitalize;
+	background: rgba(59,69,82,.6);
+	border-radius: 5px;
+	transition: .3s;
+}
+.appointment-form textarea:focus {
+	border-color: $white;
+	border-bottom: 2px solid #fff;
+	background: none;
+}
+ .appointment-form input:focus::-moz-placeholder, .appointment-form input:focus::placeholder {
+	color:$white;
+  }
+ .appointment-form input::-moz-placeholder, .appointment-form input::placeholder {
+	color: #a9bbc8;
+	font-size: 15px;
+	font-family: $c_reg;
+  }
+.appointment-form textarea::-moz-placeholder, .appointment-form textarea::placeholder {
+	color: #a9bbc8;
+	font-size: 15px;
+	font-family: $c_reg;
+  }
+  .appointment-form textarea:focus::-moz-placeholder, .appointment-form textarea:focus::placeholder {
+	color:$white;
+  }
+  .appointment-form .form-box::after {
+	color: #ffffff;
+	top: 24px;
+}
+.contact-2-btn .btn {
+	padding: 21px 90px;
+}
+
+/* 20. Contact */
+.contact-page-map{
+	height: 750px;
+  }
+  .contact-info-area {
+	  margin-top: -140px;
+  }
+  .contact {
+	  padding: 70px 10px;
+	  position: relative;
+  }
+  .contact-area {
+	background-position: center center;
+	background-repeat: no-repeat;
+  }
+  .contact i {
+	  background: #096bd8;
+	  font-size: 21px;
+	  height: 70px;
+	  width: 70px;
+	  color: #ffffff;
+	  border-radius: 50%;
+	  line-height: 71px;
+	  margin-bottom: 30px;
+  }
+  .contact h3 {
+	  font-size: 25px;
+	  margin-bottom: 15px;
+	  color: #fff;
+  }
+  .contact a {
+	  margin: 0;
+	  padding: 0 50px;
+	  color: #fff;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.contact p {
+	  padding: 0 10px;
+	}
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.contact p {
+	  padding: 0 0px;
+	}
+  }
+  
+  .contact-form-page{}
+  .contact-form-page .appointment-form input {
+	  border: 2px solid transparent;
+	  text-transform: capitalize;
+	background: #f4f4f4;
+	font-size: 15px;
+	color: #696969;
+  }
+  .contact-form-page .appointment-form input:-moz-placeholder{
+	color: #696969;
+  }
+  .contact-form-page .appointment-form input::placeholder{
+	color: #696969;
+  }
+  .contact-form-page .appointment-form textarea {
+	  border: 2px solid transparent;
+	  text-transform: capitalize;
+	background: #f4f4f4;
+	font-size: 15px;
+	color: #696969;
+  }
+  .contact-form-page .appointment-form .form-box::after {
+	  color: #096bd8;
+  }
+  .contact-form-page.appointment-form input:focus::-moz-placeholder, .appointment-form input:focus::placeholder {
+	color: #696969;
+  }
+  .contact-form-page .appointment-form input:focus, .appointment-form input:focus {
+	border-color: #096bd8;
+  }
+  .contact-form-page .appointment-form textarea:focus::-moz-placeholder, .appointment-form textarea:focus::placeholder {
+	  color: #696969;
+  }
+  .contact-form-page .appointment-form textarea:focus, .appointment-form textarea:focus {
+	  border-color: #096bd8;
+  }
+  .contact-form-page .appointment-form textarea::-moz-placeholder, .appointment-form textarea::placeholder {
+	color: #696969;
+  }
+  .contact-form-page .appointment-form textarea:focus, .appointment-form textarea:focus {
+	  border-color: #096bd8;
+  }
+  
+  input:focus:-moz-placeholder{
+	opacity: 0;
+  }
+  input:focus::placeholder{
+	opacity: 0;
+  }
+  
+  textarea:focus:-moz-placeholder{
+	opacity: 0;
+  }
+  textarea:focus::placeholder{
+	opacity: 0;
+  }
+  
+  
+  /* carrer  */
+  .carrer-cat {
+	background: #f76840;
+	padding: 40px 15px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+  }
+  .carrer-cat:hover {
+	box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  }
+  .carrer-cat h3 {
+	color: #fff;
+	font-size: 24px;
+	margin: 0;
+  }
+  .carrer-cat img {
+	margin-bottom: 20px;
+  }
+  .job-list {
+	background: #fff;
+	padding: 40px;
+	padding-top: 35px;
+	transition:.3s;
+	-webkit-transition:.3s;
+	-moz-transition:.3s;
+	-ms-transition:.3s;
+	-o-transition:.3s;
+  }
+  .job-list:hover {
+	  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  }
+  .job-list h3 {
+	  font-size: 24px;
+	  margin-bottom: 15px;
+	  display: inline-block;
+  }
+
+//   home6-contact
+
+/* contact-area-6 style  */
+.contact-area-6 {
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+  }
+  
+  .contact-area-6:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #096bd8;
+  }
+  
+  .contact-circle1 {
+	position: absolute;
+	width: 126px;
+	height: 126px;
+	background: #fff;
+	opacity: 0.1;
+	top: -75px;
+	left: 9%;
+	border-radius: 50%;
+  }
+  
+  .contact-circle2 {
+	position: absolute;
+	width: 312px;
+	height: 312px;
+	background: #fff;
+	opacity: 0.1;
+	bottom: -175px;
+	left: 24%;
+	border-radius: 50%;
+  }
+  
+  .contact-shape1 {
+	position: absolute;
+	top: -160px;
+	left: 56%;
+  }
+  
+  .contact-shape2 {
+	position: absolute;
+	bottom: -160px;
+	left: 85%;
+  }
+  .section-title.hom6-contact-title{
+	h1{
+		font-size: 44px;
+	}
+  }
+
+  
+/*server tools style  */
+.input-wrapper{
+	display: flex;
+	align-items: center;
+	@media #{$xs}{
+		flex-direction: column;
+		align-items: start;
+		gap: 20px;
+	}
+}
+.server-test {
+  margin-bottom: 25px;
+  box-shadow: 0 20px 30px rgba(27, 92, 164, 0.1);
+  padding: 0 0 0 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media #{$sm,$xs}{
+	flex-direction: column;
+	align-items: start;
+	gap: 30px;
+  }
+  .nice-select{
+	border: 0;
+  }
+}
+
+.server-test .s-test-btn::before {
+  display: none;
+}
+
+.server-test-form {
+  display: inline-block;
+}
+
+.server-test-form select {
+  border: 0;
+  background: 0;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+
+
+
+.website-link {
+  display: inline-block;
+  margin-left: 60px;
+  &::before{
+	@media #{$sm,$xs}{
+		display: none;
+	  }
+  }
+  @media #{$sm,$xs}{
+	margin-left: 0px;
+  }
+
+}
+
+.website-link input {
+  border: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+  width: calc(100% + 10px);
+}
+
+.website-link input::placeholder {
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+}
+
+.website-link input::-moz-placeholder {
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+}
+
+.website-link:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #d1d1d1;
+  top: 5px;
+  left: -33px;
+}
+
+.s-test-btn {
+  height: 60px;
+  padding: 0 35px;
+  background: #096bd8;
+  border-radius: 3px;
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: right;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.s-test-btn:hover {
+  background: #0555b1;
+}
+
+.s-test-btn::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 101%;
+  background: #096bd8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  border-radius: 0 3px 3px 0;
+  opacity: 0.5;
+}
+
+.s-test-btn:hover::before {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+  background: #1876df;
+}
+
+.site-information-box {
+  border: 1px solid #e8e8e8;
+  padding: 30px 30px;
+}
+
+.site-info-widget {
+}
+
+.site-info-title h5 {
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+.site-info-list li {
+  margin-bottom: 11px;
+}
+
+.site-info-list li:last-child {
+  margin-bottom: 0;
+}
+
+.site-info-list li span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333333;
+  width: 200px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.site-info-list li span.have-certificate {
+  color: #00c807;
+  font-weight: 400;
+}
+
+.site-info-list {
+}
+
+.site-rating {
+  margin-bottom: 0;
+}
+
+.site-rating li {
+  display: inline-block;
+  color: #fcba1e;
+  font-size: 25px;
+  margin-right: 2px;
+  line-height: 1;
+}
+
+.server-safety img {
+  width: 100%;
+}
+
+.server-safety-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  height: 50px;
+  padding: 0 15px;
+  line-height: 48px;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+}
+
+.server-safety-text::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #eeeeee;
+  transform: rotate(45deg);
+  border-bottom: 0;
+  border-right: 0;
+  left: 10px;
+  top: -6px;
+  background: #fff;
+}
+
+.site-details-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.site-details-link i {
+  margin-left: 5px;
+}
+
+.site-details-link i:last-child {
+  margin-left: -5px;
+}
+
+.site-details-link:hover {
+  color: #096bd8;
+}
+.section-title.hom6-contact-title{
+	h2{
+		margin-top: 0px;
+	}
+}
+
+
+/* subscribe-form-6 style  */
+.subscribe-form-6 {
+	position: relative;
+	padding-left: 30px;
+	@media #{$md,$sm,$xs}{
+		padding-left: 0px;
+		}
+}
+
+.subscribe-form-6 input {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border: 0;
+  background: #fff;
+  padding: 0 160px 0 45px;
+  position: relative;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.subscribe-form-6 input::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  color: #a4a4a4;
+}
+
+.subscribe-form-6 input:-moz-placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  color: #a4a4a4;
+}
+
+.subscribe-form-6::before {
+  position: absolute;
+  content: "\f0e0";
+  font-family: "Font Awesome 6 Pro";
+  left: 46px;
+  top: 18px;
+  z-index: 1;
+  font-weight: 300;
+  color: #a4a4a4;
+}
+
+.subscribe-btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  height: 60px;
+  padding: 0 25px;
+  background: #0023b1;
+  border-radius: 0 3px 3px 0;
+  line-height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.subscribe-btn::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 101%;
+  background: #096bd8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  border-radius: 0 3px 3px 0;
+  opacity: 0.2;
+}
+
+.subscribe-btn:hover::before {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+  background: #1876df;
+}
+
+.subscribe-btn i {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.subscribe-btn:hover {
+}
+
+.subscribe-form-6 form .subscribe-btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  height: 60px;
+  padding: 0 25px;
+  background: #0023b1;
+  border-radius: 0 3px 3px 0;
+  line-height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  width: inherit;
+}
+
+.subscribe-form-6 form .subscribe-btn::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 101%;
+  background: #096bd8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  border-radius: 0 3px 3px 0;
+  opacity: 0.2;
+}
+
+.subscribe-form-6 form .subscribe-btn:hover::before {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+  background: #1876df;
+}
+
+.subscribe-form-6 .wpcf7 .ajax-loader {
+  display: none;
+}
+.form_input{
+	display: flex;
+	gap: 10px;
+	@media #{$sm,$xs}{
+		flex-direction: column;
+		gap: 0px;
+	}
+}
