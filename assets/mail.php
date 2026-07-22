@@ -1,6 +1,13 @@
 <?php
 
-session_start();
+set_error_handler(function ($severity, $message, $file, $line) {
+    throw new ErrorException($message, 0, $severity, $file, $line);
+});
+
+if (session_status() === PHP_SESSION_NONE) {
+    @session_start();
+}
+
 header('X-Frame-Options: DENY');
 header('X-Content-Type-Options: nosniff');
 header('Content-Type: application/json; charset=utf-8');
@@ -77,16 +84,48 @@ try {
 
     // Attempt to send via PHPMailer SMTP if configured
     $use_smtp = $MAIL_CONFIG['use_smtp'] ?? false;
-    if ($use_smtp && class_exists('PHPMailer\\PHPMailer\\PHPMailer')) {
-        $mail = new PHPMailer\\PHPMailer\\PHPMailer(true);
+    if ($use_smtp && class_exists('PHPMailer\PHPMailer\PHPMailer')) {
+        $mail = new PHPMailer\PHPMailer\PHPMailer(true);
         try {
             $mail->isSMTP();
             $mail->Host = $MAIL_CONFIG['host'] ?? '';
             $mail->SMTPAuth = true;
-            $mail->Username = $MAIL_CONFIG['username'] ?? '';
-            $mail->Password = $MAIL_CONFIG['password'] ?? '';
             $mail->SMTPSecure = $MAIL_CONFIG['secure'] ?? 'tls';
             $mail->Port = $MAIL_CONFIG['port'] ?? 587;
+            $mail->SMTPDebug = $MAIL_CONFIG['smtp_debug'] ? 2 : 0;
+            if ($MAIL_CONFIG['smtp_debug']) {
+                $mail->Debugoutput = 'error_log';
+            }
+
+            $auth_type = strtolower($MAIL_CONFIG['auth_type'] ?? 'plain');
+            if ($auth_type === 'oauth') {
+                if (!class_exists('PHPMailer\PHPMailer\OAuth')) {
+                    throw new Exception('OAuth support requires PHPMailer and League OAuth2 Client.');
+                }
+
+                $oauth = $MAIL_CONFIG['oauth'] ?? [];
+                $provider = new League\OAuth2\Client\Provider\GenericProvider([
+                    'clientId'                => $oauth['client_id'] ?? '',
+                    'clientSecret'            => $oauth['client_secret'] ?? '',
+                    'redirectUri'             => $oauth['redirect_uri'] ?? '',
+                    'urlAuthorize'            => $oauth['url_authorize'] ?? '',
+                    'urlAccessToken'          => $oauth['url_access_token'] ?? '',
+                    'urlResourceOwnerDetails' => $oauth['url_resource_owner_details'] ?? '',
+                    'scopes'                  => $oauth['scopes'] ?? []
+                ]);
+
+                $mail->AuthType = 'XOAUTH2';
+                $mail->setOAuth(new PHPMailer\PHPMailer\OAuth([
+                    'provider'     => $provider,
+                    'clientId'     => $oauth['client_id'] ?? '',
+                    'clientSecret' => $oauth['client_secret'] ?? '',
+                    'refreshToken' => $oauth['refresh_token'] ?? '',
+                    'userName'     => $oauth['user_name'] ?? ($MAIL_CONFIG['username'] ?? ''),
+                ]));
+            } else {
+                $mail->Username = $MAIL_CONFIG['username'] ?? '';
+                $mail->Password = $MAIL_CONFIG['password'] ?? '';
+            }
 
             // Optional: adjust SMTP options for self-signed certs (not recommended for production)
             // $mail->SMTPOptions = [
